@@ -2,6 +2,7 @@ package com.example.aulaexpositiva;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -75,5 +76,10 @@ public class MainActivity<EditView> extends AppCompatActivity {
         TextView txtOperador = (TextView) findViewById(R.id.txtOpe);
         txtOperador.setText(" / ");
         simbolo = '/';
+    }
+
+    public void abrirTelaPrincipal(View v){
+        Intent telaCalculadora = new Intent(this, PrincipalActivity.class);
+        startActivity(telaCalculadora);
     }
 }
