@@ -27,48 +27,49 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/txtResult"
-                android:layout_width="208dp"
-                android:layout_height="23dp"
-                android:lineSpacingExtra="8sp"
-                android:text="Resultado"
-                android:textAlignment="center"
-                android:textSize="20sp"
-                android:typeface="sans" />
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
+            android:layout_width="375dp"
             android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnSoma2"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="48dp"
+                android:onClick="operadorSoma"
+                android:text="+" />
 
             <Button
                 android:id="@+id/btnSoma"
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="48dp"
-                android:text="+" />
+                android:onClick="operadorMultiplica"
+                android:text="*" />
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="360dp"
+            android:layout_height="64dp">
 
             <Button
-                android:id="@+id/btnDiminui"
-                android:layout_width="wrap_content"
+                android:id="@+id/btnDiminui2"
+                android:layout_width="173dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="48dp"
                 android:onClick="operadorDiminui"
                 android:text="-" />
 
             <Button
-                android:id="@+id/btnCalc"
-                android:layout_width="165dp"
+                android:id="@+id/btnDiminui"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="48dp"
-                android:onClick="btnCalcEvento"
-                android:text="Calcular" />
+                android:onClick="operadorDivide"
+                android:text="/" />
+
         </TableRow>
 
     </TableLayout>
@@ -127,5 +128,31 @@
             android:textAlignment="center" />
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:onClick="btnCalcEvento"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPrinc" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="208dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="65dp"
+        android:lineSpacingExtra="8sp"
+        android:text="Resultado"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCalc"
+        app:layout_constraintTop_toBottomOf="@+id/viewPrinc" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

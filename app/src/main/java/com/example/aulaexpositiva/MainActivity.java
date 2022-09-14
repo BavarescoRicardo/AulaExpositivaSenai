@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity<EditView> extends AppCompatActivity {
 
+    private char simbolo = '+';
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +26,28 @@ public class MainActivity<EditView> extends AppCompatActivity {
                 TextView txtNum1 = (TextView) findViewById(R.id.txtNum1);
                 TextView txtNum2 = (TextView) findViewById(R.id.txtNum2);
                 double result = Double.parseDouble(txtNum1.getText().toString());
-                result += Double.parseDouble(txtNum2.getText().toString());
+                switch (simbolo) {
+                    case '+':
+                        result += Double.parseDouble(txtNum2.getText().toString());
+                        break;
+
+                    case '-':
+                        result -= Double.parseDouble(txtNum2.getText().toString());
+                        break;
+
+                    case '/':
+                        result /= Double.parseDouble(txtNum2.getText().toString());
+                        break;
+
+                    case '*':
+                        result *= Double.parseDouble(txtNum2.getText().toString());
+                        break;
+
+                    default:
+                        break;
+                }
+
+
                 txtResult.setText(String.valueOf(result));
             }
         });
@@ -34,5 +56,24 @@ public class MainActivity<EditView> extends AppCompatActivity {
     public void operadorDiminui(View v){
         TextView txtOperador = (TextView) findViewById(R.id.txtOpe);
         txtOperador.setText(" - ");
+        simbolo = '-';
+    }
+
+    public void operadorSoma(View v){
+        TextView txtOperador = (TextView) findViewById(R.id.txtOpe);
+        txtOperador.setText(" + ");
+        simbolo = '+';
+    }
+
+    public void operadorMultiplica(View v){
+        TextView txtOperador = (TextView) findViewById(R.id.txtOpe);
+        txtOperador.setText(" * ");
+        simbolo = '*';
+    }
+
+    public void operadorDivide(View v){
+        TextView txtOperador = (TextView) findViewById(R.id.txtOpe);
+        txtOperador.setText(" / ");
+        simbolo = '/';
     }
 }
