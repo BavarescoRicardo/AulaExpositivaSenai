@@ -20,5 +20,11 @@ public class PrincipalActivity extends AppCompatActivity {
         startActivity(telaCalculadora);
     }
 
+    public void abrirTelaSobre(View v){
+        Intent telaCalculadora = new Intent(this, Sobre.class);
+        startActivity(telaCalculadora);
+    }
+
+
 
 }
