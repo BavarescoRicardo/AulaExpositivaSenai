@@ -30,4 +30,9 @@ public class MainActivity<EditView> extends AppCompatActivity {
             }
         });
     }
+
+    public void operadorDiminui(View v){
+        TextView txtOperador = (TextView) findViewById(R.id.txtOpe);
+        txtOperador.setText(" - ");
+    }
 }

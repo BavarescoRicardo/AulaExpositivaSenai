@@ -25,7 +25,7 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <TextView
                 android:id="@+id/txtResult"
@@ -34,7 +34,7 @@
                 android:lineSpacingExtra="8sp"
                 android:text="Resultado"
                 android:textAlignment="center"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:typeface="sans" />
         </TableRow>
 
@@ -52,13 +52,14 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/btnDiminui"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="48dp"
+                android:onClick="operadorDiminui"
                 android:text="-" />
 
             <Button
@@ -79,6 +80,13 @@
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:text="     Primeiro numero"
+            android:textSize="16sp" />
+
         <EditText
             android:id="@+id/txtNum1"
             android:layout_width="match_parent"
@@ -88,6 +96,13 @@
             android:numeric="decimal"
             android:text="0" />
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="     Segundo numero"
+            android:textSize="16sp" />
+
         <EditText
             android:id="@+id/txtNum2"
             android:layout_width="match_parent"
@@ -96,6 +111,21 @@
             android:inputType="number|textPersonName"
             android:numeric="decimal"
             android:text="0" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="    Operador"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtOpe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textAlignment="center" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
