@@ -1,4 +1,4 @@
-package com.example.portfolio;
+package com.senailuz.portifolio;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.aulaexpositiva", appContext.getPackageName());
+        assertEquals("com.senailuz.portifolio", appContext.getPackageName());
     }
 }

@@ -1,4 +1,4 @@
-package com.example.portfolio;
+package com.senailuz.portifolio;
 
 import org.junit.Test;
 
