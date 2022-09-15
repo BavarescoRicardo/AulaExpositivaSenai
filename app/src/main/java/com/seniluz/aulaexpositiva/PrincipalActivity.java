@@ -1,11 +1,10 @@
-package com.example.aulaexpositiva;
+package com.seniluz.aulaexpositiva;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 
 public class PrincipalActivity extends AppCompatActivity {
 

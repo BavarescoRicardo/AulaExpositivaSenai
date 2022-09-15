@@ -1,4 +1,4 @@
-package com.example.aulaexpositiva;
+package com.seniluz.aulaexpositiva;
 
 import androidx.appcompat.app.AppCompatActivity;
 

@@ -1,4 +1,4 @@
-package com.example.aulaexpositiva;
+package com.example.portfolio;
 
 import android.content.Context;
 
