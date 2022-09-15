@@ -15,9 +15,11 @@
         tools:targetApi="31">
         <activity
             android:name="com.seniluz.aulaexpositiva.Sobre"
+            android:screenOrientation="sensor"
             android:exported="false" />
         <activity
             android:name="com.seniluz.aulaexpositiva.PrincipalActivity"
+            android:screenOrientation="sensor"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,7 +29,9 @@
         </activity>
         <activity
             android:name="com.seniluz.aulaexpositiva.MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="sensor"
+            >
         </activity>
     </application>
 
