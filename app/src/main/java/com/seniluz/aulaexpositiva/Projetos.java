@@ -66,10 +66,7 @@ public class Projetos extends AppCompatActivity {
                 while ((linha = reader.readLine()) != null){
                     buffer.append(linha);
 
-                    //Toast.makeText(Projetos.this, linha, Toast.LENGTH_SHORT).show();
-
                 }
-
 
             } catch (MalformedURLException e) {
                 e.printStackTrace();
