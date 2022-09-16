@@ -4,10 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -16,6 +21,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.List;
 
 public class Projetos extends AppCompatActivity {
 
@@ -81,7 +87,23 @@ public class Projetos extends AppCompatActivity {
         protected void onPostExecute(String s)
         {
             super.onPostExecute(s);
-            txtResultado.setText(s);
+            String repositorio = "";
+            try {
+                JSONObject jsonObject = null;
+                JSONArray jsonArray = new JSONArray(s);
+
+                for(int i = 0; i<jsonArray.length(); i++){
+                    jsonObject = jsonArray.getJSONObject(i);
+
+                    repositorio += jsonObject.getString("name") + "\r\n";
+                }
+
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+            txtResultado.setText(repositorio);
         }
     }
 }
