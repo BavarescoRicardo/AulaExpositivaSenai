@@ -42,22 +42,19 @@
                         android:id="@+id/txtTituloConsultaAgenda"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="10dp"
-                        android:text="TextView" />
+                        android:padding="10dp" />
 
                     <TextView
                         android:id="@+id/txtDataConsultaAgenda"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="10dp"
-                        android:text="TextView" />
+                        android:padding="10dp" />
 
                     <TextView
                         android:id="@+id/txtDescricaoConsultaAgenda"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="10dp"
-                        android:text="TextView" />
+                        android:padding="10dp" />
 
                     <Space
                         android:layout_width="match_parent"
@@ -77,6 +74,7 @@
                 android:id="@+id/btnAnt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:onClick="btnAnt"
                 android:text="Anterior" />
@@ -85,6 +83,7 @@
                 android:id="@+id/btnProx"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:onClick="btnProx"
                 android:text="Próximo" />
@@ -94,6 +93,7 @@
             android:id="@+id/button9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_marginTop="40dp"
             android:onClick="btnVoltar"
             android:text="Voltar" />
