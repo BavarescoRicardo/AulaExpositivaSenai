@@ -2,20 +2,19 @@ package com.seniluz.aulaexpositiva;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 
-public class MainActivity<EditView> extends AppCompatActivity {
+public class Calculadora<EditView> extends AppCompatActivity {
 
     private char simbolo = '+';
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_calculadora);
 
         Button btnCalc = (Button) findViewById(R.id.btnCalc);
         TextView txtResult = (TextView) findViewById(R.id.txtResult);

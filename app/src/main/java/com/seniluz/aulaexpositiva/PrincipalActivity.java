@@ -15,7 +15,7 @@ public class PrincipalActivity extends AppCompatActivity {
     }
 
     public void abrirTelaCalculadora(View v){
-        Intent telaCalculadora = new Intent(this, MainActivity.class);
+        Intent telaCalculadora = new Intent(this, Calculadora.class);
         startActivity(telaCalculadora);
     }
 
@@ -24,6 +24,10 @@ public class PrincipalActivity extends AppCompatActivity {
         startActivity(telaCalculadora);
     }
 
+    public void abrirTelaAgenda(View v){
+        Intent telaAgenda = new Intent(this, Agenda.class);
+        startActivity(telaAgenda);
+    }
 
 
 }

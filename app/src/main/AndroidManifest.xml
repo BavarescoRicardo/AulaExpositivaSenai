@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.seniluz.aulaexpositiva">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -14,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AulaExpositiva"
         tools:targetApi="31">
+        <activity
+            android:name=".Agenda"
+            android:exported="false" />
         <activity
             android:name=".Projetos"
             android:exported="false" />
@@ -32,9 +36,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Calculadora"
             android:exported="true"
-            android:screenOrientation="sensor"></activity>
+            android:screenOrientation="sensor" />
     </application>
 
 </manifest>
