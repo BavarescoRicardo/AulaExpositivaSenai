@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 
 import android.database.sqlite.SQLiteDatabase;
-import android.database.Cursor;
 import android.widget.*;
 
 public class Agenda extends AppCompatActivity {
@@ -35,8 +34,6 @@ public class Agenda extends AppCompatActivity {
 
     TextView txtTitulo, txtDescricao;
     TextView dataEvento;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
