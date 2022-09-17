@@ -15,8 +15,7 @@ public class Sobre extends AppCompatActivity {
     }
 
     public void abrirTelaPrincipal(View v){
-        Intent telaCalculadora = new Intent(this, PrincipalActivity.class);
-        startActivity(telaCalculadora);
+        this.finish();
     }
 
     public void abrirTelaProjetos(View v){

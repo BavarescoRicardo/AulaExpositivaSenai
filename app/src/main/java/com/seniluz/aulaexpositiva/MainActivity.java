@@ -79,7 +79,6 @@ public class MainActivity<EditView> extends AppCompatActivity {
     }
 
     public void abrirTelaPrincipal(View v){
-        Intent telaCalculadora = new Intent(this, PrincipalActivity.class);
-        startActivity(telaCalculadora);
+        this.finish();
     }
 }
