@@ -16,6 +16,9 @@
         android:theme="@style/Theme.AulaExpositiva"
         tools:targetApi="31">
         <activity
+            android:name=".ConsultaAgenda"
+            android:exported="false" />
+        <activity
             android:name=".Agenda"
             android:exported="false" />
         <activity
